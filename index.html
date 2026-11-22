@@ -17,7 +17,7 @@
 <body>
 <main>
 <h1>Datenschutzerklärung</h1>
-<p class="muted">App „Familie – Unser Planer“ · Stand: 17. November 2026</p>
+<p class="muted">App „Familie – Unser Planer“ · Stand: 22. November 2026</p>
 
 <p>Diese App ist eine private Familien-App. Sie wird nur innerhalb einer Familie genutzt,
 die Teilnahme ist nur mit einem Einladungscode möglich. Es gibt keine Werbung, kein Tracking
@@ -30,12 +30,21 @@ und keine Weitergabe von Daten zu Werbe- oder Analysezwecken.</p>
 <ul>
   <li><strong>Konto:</strong> E-Mail-Adresse und Passwort (verschlüsselt gespeichert) für die Anmeldung.</li>
   <li><strong>Profil:</strong> angezeigter Name, gewählte Farbe, Rolle (Elternteil/Kind), Punktestand.</li>
-  <li><strong>Inhalte der Familie:</strong> Termine, Einkaufsliste, Aufgaben, Essensplan, Packlisten.
+  <li><strong>Inhalte der Familie:</strong> Termine, Einkaufsliste, Aufgaben, Essensplan, Rezepte, Packlisten,
+      Geburtstage und Jahrestage, Pinnwand-Notizen und Chat-Nachrichten.
       Diese Inhalte sehen nur Mitglieder derselben Familie.</li>
   <li><strong>Standort (freiwillig):</strong> nur wenn „Standort mit Familie teilen“ eingeschaltet ist,
       wird der letzte Standort gespeichert und den Familienmitgliedern angezeigt – auf Wunsch auch,
       wenn die App geschlossen ist. Beim Ausschalten wird der gespeicherte Standort sofort gelöscht.</li>
-  <li><strong>Mitteilungen:</strong> Erinnerungen werden lokal auf dem Gerät geplant; dafür werden keine Daten übertragen.</li>
+  <li><strong>Mitteilungen:</strong> Erinnerungen (Termine, Aufgaben, Geburtstage) werden lokal auf dem Gerät geplant.
+      Für Push-Mitteilungen bei neuen Chat-Nachrichten, neuen Terminen und persönlich zugewiesenen Aufgaben wird ein Geräte-Token gespeichert und
+      die Mitteilung (Absender und Kurztext) über den Apple Push Notification Service zugestellt.
+      Beim Abmelden wird das Token gelöscht.</li>
+  <li><strong>KI-Rezeptideen (freiwillig):</strong> Wenn du „Was koche ich?“ nutzt, werden nur die eingegebenen
+      Zutaten, die Personenzahl und deine Wünsche an Anthropic (Claude) übermittelt, um Rezeptvorschläge zu erstellen.
+      Es werden keine Namen oder sonstigen Familiendaten mitgeschickt.</li>
+  <li><strong>Widget und Siri:</strong> Das Widget zeigt eine Zusammenfassung, die nur auf dem eigenen Gerät gespeichert wird.
+      Siri-Befehle werden von Apple verarbeitet; die App erhält nur den erkannten Text.</li>
 </ul>
 
 <h2>Zweck und Rechtsgrundlage</h2>
@@ -47,7 +56,8 @@ bereitzustellen (Art. 6 Abs. 1 lit. b DSGVO). Das Teilen des Standorts erfolgt n
 <p>Die Daten werden beim Datenbank-Anbieter <strong>Supabase</strong> (Supabase Inc.) gespeichert,
 der als Auftragsverarbeiter tätig ist. Der Zugriff ist durch Sicherheitsregeln so beschränkt, dass jede
 Person nur die Daten der eigenen Familie sehen kann. Soweit Daten außerhalb der EU verarbeitet werden,
-erfolgt dies auf Grundlage der EU-Standardvertragsklauseln.</p>
+erfolgt dies auf Grundlage der EU-Standardvertragsklauseln. Für die KI-Rezeptideen wird Anthropic PBC
+als Dienstleister eingesetzt.</p>
 <p>Die Verteilung der Testversion erfolgt über Apple TestFlight; dabei gelten die Datenschutzbestimmungen von Apple.</p>
 
 <h2>Speicherdauer</h2>
